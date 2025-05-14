@@ -13,7 +13,6 @@ import foyer3 from '../assets/foyer3.png';
 import metalFrame from '../assets/metal_frame.png';
 import roofmount from '../assets/roofmount.png';
 import stripmallAwning from '../assets/stripmall_awning.png';
-import stripmallAwning2 from '../assets/stripmall_awning2.png';
 import wallmount from '../assets/wallmount.png';
 import weatherMaster from '../assets/weather_master.png';
 
