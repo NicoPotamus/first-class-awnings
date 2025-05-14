@@ -45,7 +45,7 @@ export default function About() {
                   First Class Awnings specializes in designing, manufacturing, and installing custom awnings for both commercial and residential properties. Our comprehensive expertise ensures that we can handle every aspect of your awning project from start to finish.
                 </p>
                 <p>
-                  With our team's combined 60 years of experience in the industry, we've developed deep expertise in all aspects of awning creation and maintenance - from initial design concepts to manufacturing, installation, and ongoing service.
+                  With our team&apos;s combined 60 years of experience in the industry, we&apos;ve developed deep expertise in all aspects of awning creation and maintenance - from initial design concepts to manufacturing, installation, and ongoing service.
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function About() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Design</h3>
               <p className="text-gray-600">
-                Tailored awning solutions designed to match your property's architecture and your specific needs.
+                Tailored awning solutions designed to match your property&apos;s architecture and your specific needs.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
@@ -93,7 +93,7 @@ export default function About() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Residential Expertise</h3>
               <p className="text-gray-600">
-                Beautiful, functional awning solutions to enhance your home's aesthetics and comfort.
+                Beautiful, functional awning solutions to enhance your home&apos;s aesthetics and comfort.
               </p>
             </div>
           </div>
