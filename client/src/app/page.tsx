@@ -1,17 +1,47 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import entranceImg from './assets/entrance.png';
 import foyerImg from './assets/foyer.png';
 import weatherMasterImg from './assets/weather_master.png';
 import roofmount from './assets/roofmount.png';
+import { useEffect, useRef } from 'react';
 
 export default function Home() {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (parallaxRef.current) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * 0.3; // Adjust this value to control parallax speed
+        parallaxRef.current.style.transform = `translate3d(0px, ${rate}px, 0px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-[600px] bg-fixed bg-center bg-[length:250%_auto] sm:bg-cover bg-[center_20%] sm:bg-center" style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${roofmount.src})`
-      }}>
+      <div className="relative h-[550px] overflow-hidden">
+        <div className="absolute w-full h-[130%] -top-[10%]">
+          <div ref={parallaxRef} className="relative w-full h-full will-change-transform">
+            <Image
+              src={roofmount}
+              alt="Beautiful entrance awning"
+              fill
+              priority
+              className="object-cover object-center"
+              sizes="100vw"
+              quality={100}
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
+        </div>
         <div className="relative max-w-7xl mx-auto pt-32 px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
             Transform Your Outdoor Space
@@ -19,7 +49,7 @@ export default function Home() {
           <p className="text-xl text-white mb-8 max-w-2xl">
             Premium awning solutions for your home or business. Experience comfort and style with First Class Awnings.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mb-4">
             <Link
               href="/portfolio"
               className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"

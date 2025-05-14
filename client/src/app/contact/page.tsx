@@ -26,10 +26,10 @@ export default function Contact() {
                 Speak directly with our awning experts
               </p>
               <a
-                href="tel:+1234567890"
+                href="tel:+8457424584"
                 className="inline-flex items-center justify-center w-full bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
               >
-                (123) 456-7890
+                (845) 742-4584
               </a>
             </div>
 
@@ -69,8 +69,8 @@ export default function Contact() {
           {/* Location Info */}
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Visit Our Showroom</h2>
-            <p className="text-gray-600 mb-2">123 Awning Street</p>
-            <p className="text-gray-600 mb-8">City, State 12345</p>
+            <p className="text-gray-600 mb-2"> Coming</p>
+            <p className="text-gray-600 mb-8">Soon</p>
             <Link
               href="/portfolio"
               className="text-blue-600 hover:text-blue-800 font-medium"
