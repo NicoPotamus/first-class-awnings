@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-[550px] overflow-hidden">
-        <div className="absolute w-full h-[130%] -top-[10%]">
+      <div className="relative h-[430px] sm:h-[550px] overflow-hidden">
+        <div className="absolute w-full h-[130%] -top-[13%] sm:-top-[10%]">
           <div ref={parallaxRef} className="relative w-full h-full will-change-transform">
             <Image
               src={roofmount}
@@ -49,7 +49,7 @@ export default function Home() {
           <p className="text-xl text-white mb-8 max-w-2xl">
             Premium awning solutions for your home or business. Experience comfort and style with First Class Awnings.
           </p>
-          <div className="flex gap-4 mb-4">
+          <div className="flex gap-4">
             <Link
               href="/portfolio"
               className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
