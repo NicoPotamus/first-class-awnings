@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../assets/logob.png"
 
 export default function About() {
   return (
@@ -8,10 +9,11 @@ export default function About() {
       <div className="relative bg-gray-900 py-24">
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            src="/hero-about.jpg"
+            src={logo}
             alt="Commercial awning installation"
             fill
-            className="object-cover opacity-20"
+            className="object-contain opacity-20"
+            sizes="100vw"
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -45,7 +47,7 @@ export default function About() {
                   First Class Awnings specializes in designing, manufacturing, and installing custom awnings for both commercial and residential properties. Our comprehensive expertise ensures that we can handle every aspect of your awning project from start to finish.
                 </p>
                 <p>
-                  With our team&apos;s combined 60 years of experience in the industry, we&apos;ve developed deep expertise in all aspects of awning creation and maintenance - from initial design concepts to manufacturing, installation, and ongoing service.
+                  With our team&apos;s combined 50 years of experience in the industry, we&apos;ve developed deep expertise in all aspects of awning creation and maintenance - from initial design concepts to manufacturing, installation, and ongoing service.
                 </p>
               </div>
             </div>

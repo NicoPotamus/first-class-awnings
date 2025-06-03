@@ -71,7 +71,7 @@ export default function Portfolio() {
             Ready to transform your space with a custom awning solution?
           </p>
           <a
-            href="mailto:contact@firstclassawnings.com"
+            href="tel:+8453935050"
             className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors inline-block"
           >
             Contact Us Today
