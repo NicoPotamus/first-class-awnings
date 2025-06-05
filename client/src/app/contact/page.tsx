@@ -35,7 +35,7 @@ export default function Contact() {
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">Call Now</h2>
               <p className="mb-6 text-gray-600">Speak directly with our awning experts</p>
               <a
-                href="tel:+8453935050"
+                href="tel:+18453935050"
                 className="inline-flex w-full items-center justify-center rounded-md bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700"
               >
                 (845) 393-5050
