@@ -20,7 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body className="light">
+      <body className={`light ${inter.variable} font-sans`}>
+        <Navbar />
         {children}
       </body>
       <link rel="icon" href="favicon.ico?v=2" />
