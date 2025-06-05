@@ -32,51 +32,43 @@ export default function Home() {
           <div ref={parallaxRef} className="relative h-full w-full will-change-transform">
             <Image
               src={logo}
-              alt="Beautiful entrance awning"
+              alt="First Class Awnings"
               fill
               priority
               className="object-fit object-center"
               sizes="100vw"
               quality={100}
             />
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
-        </div>
-        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-4 pt-32 sm:px-6 lg:px-8">
-          <h1 className="mb-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
-            Transform Your Outdoor Space
-          </h1>
-          <p className="mb-8 max-w-2xl text-xl text-white">
-            Premium awning solutions for your home or business. Experience comfort and style with
-            First Class Awnings.
-          </p>
-          <div className="flex gap-4">
-            <Link
-              href="/portfolio"
-              className="rounded-md bg-white px-8 py-3 font-medium text-gray-900 transition-colors hover:bg-gray-100"
-            >
-              View Our Work
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-md border-2 border-white bg-transparent px-8 py-3 font-medium text-white transition-colors hover:bg-white/10"
-            >
-              Get a Quote
-            </Link>
           </div>
         </div>
       </div>
-
+      
       {/* Features Section */}
       <div className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Why Choose First Class Awnings?
+              Transform Your Outdoor Space
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              We provide top-quality awning solutions tailored to your needs
+              Premium awning solutions for your home or business. Experience comfort and style with
+            First Class Awnings.
             </p>
+          </div>
+          
+          <div className="flex justify-center gap-3 sm:gap-6 mb-16">
+            <Link
+              href="/portfolio"
+              className="rounded-md bg-blue-600 px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-medium text-white transition-colors hover:bg-blue-700"
+            >
+              View Our Portfolio
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-md bg-gray-200 px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base font-medium text-gray-800 transition-colors hover:bg-gray-300"
+            >
+              Get a Quote
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">

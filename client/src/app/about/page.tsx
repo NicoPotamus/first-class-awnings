@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../logo.svg';
+import bigRed from '../assets/metal_frame2.png';
 
 export default function About() {
   return (
@@ -9,10 +9,10 @@ export default function About() {
       <div className="relative bg-gray-900 py-24">
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            src={logo}
+            src={bigRed}
             alt="Commercial awning installation"
             fill
-            className="object-contain opacity-20"
+            className="object-cover opacity-20"
             sizes="100vw"
           />
         </div>

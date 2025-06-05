@@ -15,15 +15,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <Navbar />
+    <html lang="en" className="light">
+      <body className="light">
         {children}
       </body>
+      <link rel="icon" href="favicon.ico?v=2" />
     </html>
   );
 }

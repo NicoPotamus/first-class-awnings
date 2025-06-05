@@ -56,7 +56,7 @@ const projects = [
     title: "Commercial Installation", 
     description: "Commercial retractable and stationary awnings", 
     imagePosition: "object-[10%_50%] scale-[1.5] translate-x-[25%] md:translate-x-0 md:object-center md:scale-100",
-    secondImagePosition: "object-[center_50%] scale-[1.35] translate-x-[35%] md:translate-x-0 md:object-center md:scale-100",
+    secondImagePosition: "object-[center_50%] scale-[1.35] translate-x-[15%] md:translate-x-0 md:object-center md:scale-100",
   },
   { image: wallmount, 
     secondImage: wallmount2,
