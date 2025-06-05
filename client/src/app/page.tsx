@@ -1,11 +1,11 @@
 'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import entranceImg from './assets/entrance.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import gazebo from './assets/gazebo.png';
 import foyerImg from './assets/foyer.png';
 import weatherMasterImg from './assets/weather_master.png';
-import roofmount from './assets/roofmount.png';
+import logo from './logo.svg'; // Adjust the path as necessary
 import { useEffect, useRef } from 'react';
 
 export default function Home() {
@@ -27,38 +27,39 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-[430px] sm:h-[550px] overflow-hidden">
-        <div className="absolute w-full h-[130%] -top-[13%] sm:-top-[10%]">
-          <div ref={parallaxRef} className="relative w-full h-full will-change-transform">
+      <div className="relative h-[430px] overflow-hidden sm:h-[550px]">
+        <div className="absolute -top-[13%] h-[130%] w-full sm:-top-[10%]">
+          <div ref={parallaxRef} className="relative h-full w-full will-change-transform">
             <Image
-              src={roofmount}
+              src={logo}
               alt="Beautiful entrance awning"
               fill
               priority
-              className="object-cover object-center"
+              className="object-fit object-center"
               sizes="100vw"
               quality={100}
             />
             <div className="absolute inset-0 bg-black/50" />
           </div>
         </div>
-        <div className="relative max-w-7xl mx-auto pt-32 px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-4 pt-32 sm:px-6 lg:px-8">
+          <h1 className="mb-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
             Transform Your Outdoor Space
           </h1>
-          <p className="text-xl text-white mb-8 max-w-2xl">
-            Premium awning solutions for your home or business. Experience comfort and style with First Class Awnings.
+          <p className="mb-8 max-w-2xl text-xl text-white">
+            Premium awning solutions for your home or business. Experience comfort and style with
+            First Class Awnings.
           </p>
           <div className="flex gap-4">
             <Link
               href="/portfolio"
-              className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
+              className="rounded-md bg-white px-8 py-3 font-medium text-gray-900 transition-colors hover:bg-gray-100"
             >
               View Our Work
             </Link>
             <Link
               href="/contact"
-              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition-colors"
+              className="rounded-md border-2 border-white bg-transparent px-8 py-3 font-medium text-white transition-colors hover:bg-white/10"
             >
               Get a Quote
             </Link>
@@ -67,9 +68,9 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <div className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+      <div className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Why Choose First Class Awnings?
             </h2>
@@ -78,25 +79,20 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Feature cards */}
             <div className="text-center">
-              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src={foyerImg}
-                  alt="Premium quality awning"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative mb-6 h-64 overflow-hidden rounded-lg">
+                <Image src={foyerImg} alt="Premium quality awning" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Premium Quality</h3>
+              <h3 className="mb-4 text-xl font-semibold text-gray-900">Premium Quality</h3>
               <p className="text-gray-600">
                 We use only the finest materials and latest technology in our installations
               </p>
             </div>
 
             <div className="text-center">
-              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+              <div className="relative mb-6 h-64 overflow-hidden rounded-lg">
                 <Image
                   src={weatherMasterImg}
                   alt="Expert installation"
@@ -104,22 +100,17 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Expert Installation</h3>
+              <h3 className="mb-4 text-xl font-semibold text-gray-900">Expert Installation</h3>
               <p className="text-gray-600">
                 Our experienced team ensures perfect installation every time
               </p>
             </div>
 
             <div className="text-center">
-              <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src={entranceImg}
-                  alt="Custom solutions"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative mb-6 h-64 overflow-hidden rounded-lg">
+                <Image src={gazebo} alt="Custom solutions" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Solutions</h3>
+              <h3 className="mb-4 text-xl font-semibold text-gray-900">Custom Solutions</h3>
               <p className="text-gray-600">
                 Tailored designs to match your property and preferences
               </p>
@@ -130,13 +121,13 @@ export default function Home() {
 
       {/* Call to Action Section */}
       <div className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-3xl font-bold text-gray-900">
             Ready to enhance your outdoor space?
           </h2>
           <Link
             href="/portfolio"
-            className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors inline-block"
+            className="inline-block rounded-md bg-blue-600 px-8 py-3 font-medium text-white transition-colors hover:bg-blue-700"
           >
             Explore Our Portfolio
           </Link>

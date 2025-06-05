@@ -1,36 +1,71 @@
-import Image from "next/image";
+import ProjectCard from '../components/ProjectCard';
 
 // Import all images
 import branded from '../assets/branded.png';
 import brickWindows from '../assets/brick_windows.png';
-import entrance from '../assets/entrance.png';
+import windows from '../assets/windowsawnings.png';
 import fourSeasons from '../assets/four_seasons.png';
 import fourSeasons2 from '../assets/four_seasons2.png';
 import fourSeasons3 from '../assets/four_seasons3.png';
-import foyer from '../assets/foyer.png';
 import foyer2 from '../assets/foyer2.png';
 import foyer3 from '../assets/foyer3.png';
 import metalFrame from '../assets/metal_frame.png';
+import metalFramSis from '../assets/metal_frame_sis.png'; 
 import roofmount from '../assets/roofmount.png';
 import stripmallAwning from '../assets/stripmall_awning.png';
-import wallmount from '../assets/wallmount.png';
-import weatherMaster from '../assets/weather_master.png';
+import stripmsllAwning3 from '../assets/stripmall_awning3.png';
+import wallmount from '../assets/wallmount2.jpeg';
+import wallmount2 from '../assets/wallmount3.jpeg';
 
 const projects = [
-  { image: branded, title: "Branded Commercial Awning", description: "Custom branded awning for business storefront" },
-  { image: brickWindows, title: "Window Awnings", description: "Decorative window awnings for brick building" },
-  { image: entrance, title: "Enclosed Entrance", description: "Elegant entrance awning solution" },
-  { image: fourSeasons, title: "Four Seasons Display", description: "Commercial awning installation" },
-  { image: fourSeasons2, title: "Storefront Solution", description: "Modern storefront awning design" },
-  { image: fourSeasons3, title: "Complete Coverage", description: "Full storefront awning system" },
-  { image: foyer, title: "Foyer Enhancement", description: "Sophisticated entrance awning" },
-  { image: foyer2, title: "Modern Foyer", description: "Contemporary entrance design" },
-  { image: foyer3, title: "Classic Entrance", description: "Traditional awning styling" },
-  { image: metalFrame, title: "Metal Frame Design", description: "Durable metal frame construction" },
+  {
+    image: brickWindows, 
+    secondImage: windows,
+    isDouble: true,
+    title: "Window Awnings",
+    description: "Sturdy and stylish window awnings for residential and commercial properties",
+    imagePosition: "object-[center_50%] scale-[1.15] md:object-center md:scale-100",
+    secondImagePosition: "object-[center_50%] scale-[1.7] md:object-center md:scale-100",
+  },
+  { image: branded, title: "Commercial Solutions", description: "Custom branded awnings and window solutions for businesses" },
+  { image: fourSeasons, title: "Four Seasons Enclosure", description: "Commercial awning installation" },
+  { 
+    image: fourSeasons2, 
+    secondImage: fourSeasons3, 
+    isDouble: true, 
+    title: "Outdoor Seating enclosure", 
+    description: "Modern enclosure to regulate and contain environment",
+    imagePosition: "object-[center_50%] scale-[1.5] md:object-center md:scale-100",
+    secondImagePosition: "object-[center_30%] scale-[1.5] md:object-center md:scale-100",
+  },
+  { 
+    image: metalFrame, 
+    secondImage: metalFramSis,
+    isDouble: true,
+    title: "Metal Frame Design", 
+    description: "Durable metal frame construction",
+    imagePosition: "object-[center_50%] scale-[1.15] md:object-center md:scale-100",
+    secondImagePosition: "object-[center_50%] scale-[1.7] md:object-center md:scale-100",
+  },
+  { image: foyer2, title: "Foyer Entrances", description: "Elegant entrance canopies that provide both protection and curb appeal." },
+  { image: foyer3,title: "Interior Vestibule", description: "Indoor vestibule great for temperature control and aesthetics" },
+  { 
+    image: stripmallAwning, 
+    secondImage: stripmsllAwning3,
+    isDouble: true,
+    title: "Commercial Installation", 
+    description: "Commercial retractable and stationary awnings", 
+    imagePosition: "object-[10%_50%] scale-[1.5] translate-x-[25%] md:translate-x-0 md:object-center md:scale-100",
+    secondImagePosition: "object-[center_50%] scale-[1.35] translate-x-[35%] md:translate-x-0 md:object-center md:scale-100",
+  },
+  { image: wallmount, 
+    secondImage: wallmount2,
+    isDouble: true,
+    title: "Wall Mounted Design",
+    description: "Secure wall mounting system for retractable awnings",
+    secondImagePosition: "scale(1.25)",
+  },
   { image: roofmount, title: "Roof Mounted System", description: "Professional roof mounting solution" },
-  { image: stripmallAwning, title: "Strip Mall Installation", description: "Commercial strip mall awning" },
-  { image: wallmount, title: "Wall Mounted Design", description: "Secure wall mounting system" },
-  { image: weatherMaster, title: "Weather Master Series", description: "All-weather protection solution" },
 ];
 
 export default function Portfolio() {
@@ -46,23 +81,7 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="relative h-64">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
-              </div>
-            </div>
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
 
