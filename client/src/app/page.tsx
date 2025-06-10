@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gazebo from './assets/gazebo.png';
 import foyerImg from './assets/foyer.png';
 import weatherMasterImg from './assets/weather_master.png';
@@ -11,7 +11,6 @@ import FloatingContactButton from './components/FloatingContactButton';
 
 export default function Home() {
   const parallaxRef = useRef<HTMLDivElement>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

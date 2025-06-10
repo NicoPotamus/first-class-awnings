@@ -44,9 +44,10 @@ ${formData.message}
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
-    console.error('Failed to send email');
+    const errorMessage = error instanceof Error ? error.message : 'Failed to send email';
+    console.error('Failed to send email:', errorMessage);
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: errorMessage },
       { status: 500 }
     );
   }
