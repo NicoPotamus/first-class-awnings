@@ -7,6 +7,7 @@ import gazebo from './assets/gazebo.png';
 import foyerImg from './assets/foyer.png';
 import weatherMasterImg from './assets/weather_master.png';
 import logo from './logo.svg';
+import phoneNumber from './assets/phoneNumber.svg';
 import FloatingContactButton from './components/FloatingContactButton';
 
 export default function Home() {
@@ -31,16 +32,27 @@ export default function Home() {
         {/* Hero Section */}
         <div className="relative h-[430px] overflow-hidden sm:h-[550px]">
           <div className="absolute -top-[13%] h-[130%] w-full sm:-top-[10%] bg-white">
-            <div ref={parallaxRef} className="relative h-full w-full will-change-transform">
-              <Image
-                src={logo}
-                alt="First Class Awnings"
-                fill
-                priority
-                className="object-fit object-center"
-                sizes="100vw"
-                quality={100}
-              />
+            <div ref={parallaxRef} className="relative h-full w-full will-change-transform flex flex-col items-center justify-center gap-8">
+              <div className="relative w-full h-[70%]">
+                <Image
+                  src={logo}
+                  alt="First Class Awnings"
+                  fill
+                  priority
+                  className="object-contain object-center"
+                  sizes="100vw"
+                  quality={100}
+                />
+              </div>
+              <div className="relative w-[600px] h-[120px] sm:w-[800px] sm:h-[160px] animate-bounce">
+                <Image
+                  src={phoneNumber}
+                  alt="Phone Number"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 600px, 800px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -117,13 +129,13 @@ export default function Home() {
         <div className="bg-gray-100 py-16">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="mb-8 text-3xl font-bold text-gray-900">
-              Ready to enhance your outdoor space?
+              Get a Free Quote Today!
             </h2>
             <Link
-              href="/portfolio"
+              href="/contact"
               className="inline-block rounded-md bg-blue-600 px-8 py-3 font-medium text-white transition-colors hover:bg-blue-700"
             >
-              Explore Our Portfolio
+              Contact us
             </Link>
           </div>
         </div>

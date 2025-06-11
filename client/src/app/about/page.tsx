@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="mb-6 text-4xl font-bold text-white sm:text-5xl">
-            50 Years of Combined Excellence
+            25 Years of  Excellence
           </h1>
           <p className="mx-auto max-w-3xl text-xl text-gray-300">
             From manufacturing to installation and service, our experienced team delivers
@@ -115,13 +115,13 @@ export default function About() {
             Ready to Start Your Awning Project?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl text-blue-100">
-            Let our experienced team help you create the perfect awning solution for your property.
+            Contact us today for a free quote!
           </p>
           <Link
-            href="/portfolio"
+            href="/contact"
             className="inline-block rounded-md bg-white px-8 py-3 font-medium text-blue-600 transition-colors hover:bg-blue-50"
           >
-            View Our Work
+            Contact us
           </Link>
         </div>
       </div>
