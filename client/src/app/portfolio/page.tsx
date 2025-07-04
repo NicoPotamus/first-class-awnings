@@ -16,6 +16,7 @@ import stripmallAwning from '../assets/stripmall_awning.png';
 import stripmsllAwning3 from '../assets/stripmall_awning3.png';
 import wallmount from '../assets/wallmount2.jpeg';
 import wallmount2 from '../assets/wallmount3.jpeg';
+import Link from 'next/link';
 
 const projects = [
   {
@@ -89,12 +90,12 @@ export default function Portfolio() {
           <p className="text-xl text-gray-600 mb-8">
             Ready to transform your space with a custom awning solution?
           </p>
-          <a
-            href="tel:+8453935050"
-            className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors inline-block"
+          <Link
+            href="/contact"
+            className="inline-block rounded-md bg-white px-8 py-3 font-medium text-blue-600 transition-colors hover:bg-blue-50"
           >
-            Contact Us Today
-          </a>
+            Contact us
+          </Link>
         </div>
       </div>
     </main>

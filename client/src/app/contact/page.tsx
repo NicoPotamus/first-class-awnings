@@ -14,7 +14,18 @@ export default function Contact() {
 
         <div className="mx-auto max-w-3xl">
           {/* Contact Cards */}
-            <ContactForm></ContactForm>
+          <ContactForm></ContactForm>
+
+          {/* Phone Number Section */}
+          <div className="my-16 text-center">
+            <h2 className="mb-4 text-2xl font-semibold text-gray-900">Give Us a Call</h2>
+            <a 
+              href="tel:+18453935050" 
+              className="text-4xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+            >
+              (845) 393-5050
+            </a>
+          </div>
 
           {/* Business Hours */}
           <div className="mb-16 rounded-lg bg-white p-8 shadow-md">

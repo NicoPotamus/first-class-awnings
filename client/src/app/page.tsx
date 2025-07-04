@@ -66,7 +66,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 text-xl text-gray-600">
                 Premium awning solutions for your home or business. Experience comfort and style with
-              First Class Awnings.
+              First Class Awnings. Proudly serving the Hudson Valley
               </p>
             </div>
             
