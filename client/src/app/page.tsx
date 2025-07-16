@@ -45,13 +45,15 @@ export default function Home() {
                 />
               </div>
               <div className="relative w-[600px] h-[120px] sm:w-[800px] sm:h-[160px] animate-bounce">
-                <Image
-                  src={phoneNumber}
-                  alt="Phone Number"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 600px, 800px"
-                />
+                <a href="tel:+18453935050" className="block w-full h-full">
+                  <Image
+                    src={phoneNumber}
+                    alt="Phone Number"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 600px, 800px"
+                  />
+                </a>
               </div>
             </div>
           </div>

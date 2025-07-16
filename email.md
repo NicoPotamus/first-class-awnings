@@ -1,3 +1,3 @@
 ###
-Sean.FirstClassAwnings@gmail
+Sean.FirstClassAwnings@gmail.com
 Firstclass25
