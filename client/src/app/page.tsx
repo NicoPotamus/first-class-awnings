@@ -55,6 +55,7 @@ export default function Home() {
                   />
                 </a>
               </div>
+              <p>(845) 393-5050</p>
             </div>
           </div>
         </div>
