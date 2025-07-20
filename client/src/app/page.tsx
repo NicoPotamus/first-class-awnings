@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script'; // Add this import
 import { useEffect, useRef } from 'react';
 import gazebo from './assets/gazebo.png';
 import foyerImg from './assets/foyer.png';
@@ -28,6 +29,20 @@ export default function Home() {
 
   return (
     <>
+      {/* Google Ads Conversion Tracking */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17355698276"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17355698276');
+        `}
+      </Script>
+
       <main className="min-h-screen">
         {/* Hero Section */}
         <div className="relative h-[430px] overflow-hidden sm:h-[550px]">
