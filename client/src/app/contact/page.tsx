@@ -43,11 +43,19 @@ export default function Contact() {
           {/* Location Info */}
           <div className="text-center">
             <h2 className="mb-4 text-2xl font-semibold text-gray-900">Visit Our Showroom</h2>
-            <p className="mb-2 text-gray-600"> Coming</p>
-            <p className="mb-8 text-gray-600">Soon</p>
-            <Link href="/portfolio" className="font-medium text-blue-600 hover:text-blue-800">
-              View Our Work →
-            </Link>
+            <a
+              href="https://maps.google.com/?q=24+Western+Ave,+Marlboro,+NY+12542"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-8 inline-block text-xl text-black-600 hover:text-blue-800 transition-colors"
+            >
+              24 Western Ave, Marlboro, NY 12542
+            </a>
+            <div className="mt-8">
+              <Link href="/portfolio" className="font-medium text-blue-600 hover:text-blue-800">
+                View Our Work →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
