@@ -63,7 +63,7 @@ export default function Home() {
                 href="https://maps.google.com/?q=24+Western+Ave,+Marlboro,+NY+12542"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl font-bold text-black-800 hover:text-blue-600 transition-colors pb-10"
+                className="block text-center text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors pb-10"
               >
                 24 Western Ave, Marlboro, NY 12542
               </a>
