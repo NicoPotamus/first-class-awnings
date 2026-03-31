@@ -1,7 +1,7 @@
 FROM node:22-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --prefer-offline
+RUN npm ci --prefer-offline && npm install --os=linux --libc=musl --cpu=x64 sharp
 COPY . .
 RUN npm run build
 
