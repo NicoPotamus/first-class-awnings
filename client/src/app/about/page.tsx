@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import bigRed from '../assets/metal_frame2.png';
+import bigRed from '../assets/commercial/metal_frame2.png';
 
 export default function About() {
   return (

@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script'; // Add this import
 import { useEffect, useRef } from 'react';
-import gazebo from './assets/gazebo.png';
-import foyerImg from './assets/foyer.png';
-import weatherMasterImg from './assets/weather_master.png';
+import gazebo from './assets/4season/gazebo.png';
+import foyerImg from './assets/commercial/foyer.png';
+import weatherMasterImg from './assets/weathermaster/weather_master.png';
 import logo from './logo.svg';
 import phoneNumber from './assets/phoneNumber.svg';
 import FloatingContactButton from './components/FloatingContactButton';
@@ -47,7 +47,7 @@ export default function Home() {
         {/* Hero Section */}
         <div className="relative h-[430px] overflow-hidden sm:h-[550px]">
           <div className="absolute -top-[13%] h-[130%] w-full sm:-top-[10%] bg-white">
-            <div ref={parallaxRef} className="relative h-full w-full will-change-transform flex flex-col items-center justify-center gap-8">
+            <div ref={parallaxRef} className="relative h-full w-full will-change-transform flex flex-col items-center justify-center gap-8 mt-16 sm:mt-0">
               <div className="relative w-full h-[70%]">
                 <Image
                   src={logo}
