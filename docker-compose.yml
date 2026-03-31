@@ -2,7 +2,7 @@ services:
   first-class:
     build:
       context: ./client
-    image: first-class-awnings_first-class   # 👈 ADD THIS
+    image: localhost/first-class-awnings_first-class
     container_name: first-class
     env_file:
       - ./client/.env
