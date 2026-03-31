@@ -1,10 +1,8 @@
-version: "3.8"
-
 services:
   first-class:
     build:
       context: ./client
-      dockerfile: Dockerfile   # optional if it's named Dockerfile
+    image: first-class-awnings_first-class   # 👈 ADD THIS
     container_name: first-class
     env_file:
       - ./client/.env
