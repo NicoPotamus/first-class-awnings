@@ -14,6 +14,7 @@ import gazebo from '../assets/4season/gazebo.png';
 
 // Weathermaster
 import weatherMaster from '../assets/weathermaster/weather_master.png';
+import weatherMaster2 from '../assets/weathermaster/IMG_1293.jpg';
 
 // Retractable Wallmount
 import wallmount from '../assets/wallmount/wallmount.png';
@@ -24,9 +25,13 @@ import wallmount4 from '../assets/wallmount/wallmount4.png';
 import wallmountModal1a from '../assets/wallmount/wallmountModal1a.jpg';
 import wallmountModal1b from '../assets/wallmount/wallmountModal1b.jpg';
 import wallmountModal2 from '../assets/wallmount/wallmountModal2.jpg';
+import wallmount5 from '../assets/wallmount/IMG_0887.jpg';
+import wallmount6 from '../assets/wallmount/IMG_1131.jpg';
+import wallmount7 from '../assets/wallmount/IMG_1136.jpg';
 
 // Retractable Roof Mount
 import roofmount from '../assets/roofmount/roofmount.png';
+import roofmount2 from '../assets/roofmount/IMG_0190.jpg';
 
 // Commercial
 import branded from '../assets/commercial/branded.png';
@@ -38,6 +43,20 @@ import commercialModal2 from '../assets/commercial/CommercialSolutionModal2.jpg'
 import foyer from '../assets/commercial/foyer.png';
 import foyer2 from '../assets/commercial/foyer2.png';
 import foyer3 from '../assets/commercial/foyer3.png';
+import brickWindows from '../assets/commercial/brick_windows.png';
+import entranceCover from '../assets/commercial/entranceCover.jpeg';
+import entrance from '../assets/commercial/entrance.png';
+import commercial1 from '../assets/commercial/IMG_0676.jpg';
+import commercial2 from '../assets/commercial/IMG_0800.jpg';
+import commercial3 from '../assets/commercial/IMG_0968.jpg';
+import commercial4 from '../assets/commercial/IMG_1226.jpg';
+import commercial5 from '../assets/commercial/IMG_1234.jpg';
+import commercial6 from '../assets/commercial/IMG_1294.jpg';
+import commercial7 from '../assets/commercial/IMG_1958.jpg';
+import metalFrame from '../assets/commercial/metal_frame.png';
+import metalFrame2 from '../assets/commercial/metal_frame2.png';
+import metalFrameSis from '../assets/commercial/metal_frame_sis.png';
+import windowsAwnings from '../assets/commercial/windowsawnings.png';
 
 interface Section {
   title: string;
@@ -57,25 +76,25 @@ const sections: Section[] = [
     title: "Weathermaster",
     description: "Premium retractable awning systems engineered for maximum weather protection and long-lasting durability.",
     coverImage: weatherMaster,
-    images: [weatherMaster],
+    images: [weatherMaster, weatherMaster2],
   },
   {
     title: "Retractable Wallmount",
     description: "Sleek wall-mounted retractable awnings that extend your living or dining space with the touch of a button.",
     coverImage: wallmountModal1a,
-    images: [wallmountModal1a, wallmountModal1b, wallmountModal2, wallmount, wallmount2, wallmount3, wallmount3sis, wallmount4],
+    images: [wallmountModal1a, wallmountModal1b, wallmountModal2, wallmount, wallmount2, wallmount3, wallmount3sis, wallmount4, wallmount5, wallmount6, wallmount7],
   },
   {
     title: "Retractable Roof Mount",
     description: "Professionally installed roof-mounted retractable systems offering seamless shade coverage for patios and decks.",
     coverImage: roofmount,
-    images: [roofmount],
+    images: [roofmount, roofmount2],
   },
   {
     title: "Commercial Installation",
     description: "Custom branded and large-scale awning solutions for storefronts, strip malls, and commercial properties.",
     coverImage: branded,
-    images: [branded, stripmallAwning, stripmallAwning2, stripmallAwning3, commercialModal1, commercialModal2, foyer, foyer2, foyer3],
+    images: [branded, stripmallAwning, stripmallAwning2, stripmallAwning3, commercialModal1, commercialModal2, foyer, foyer2, foyer3, brickWindows, entranceCover, entrance, commercial1, commercial2, commercial3, commercial4, commercial5, commercial6, commercial7, metalFrame, metalFrame2, metalFrameSis, windowsAwnings],
   },
 ];
 
